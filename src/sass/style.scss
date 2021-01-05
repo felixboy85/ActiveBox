@@ -33,80 +33,13 @@ p {
     padding: 0 15px;
 }
 
-.team {
-    margin: 100px 0 70px;
-    &__inner {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -15px;
-    }
-    &__item {
-        width: 25%;
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
-    &__photo {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-    &__name {
-        margin-bottom: 8px;
-
-        font-size: 22px;
-        color: #2d3033;
-    }
-    &__prof {
-        margin-bottom: 15px;
-
-        font-size: 13px;
-        color: #e84545;
-        text-transform: uppercase;
-    }
-    &__descr {
-        margin-bottom: 20px;
-        font-size: 14px;
-        color:#6c7279;
-        line-height: 1.5;
-    }
-}
-
-.social {
-    display: flex;
-    &__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        margin-right: 4px;
-
-        background-color: #fff;
-        border: 1px solid #e8ecee;
-
-        transition: background .1s linear;
-        &:hover {
-            background-color: #e8ecee;
-        }
-        &:hover .social__icon {
-            fill: #000000;
-        }
-    }
-    &__icon {
-        display: block;
-        height: 18px;
-        fill: #c6cacc;
-
-        transition: fill .1s linear
-    }
-}
-
 
 
 @import 'blocks/intro';
 @import 'blocks/features';
 @import 'blocks/works';
+@import 'blocks/team';
+@import 'blocks/reviews';
 
 
 
