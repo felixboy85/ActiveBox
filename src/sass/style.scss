@@ -1,5 +1,5 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap');
 
 body {
     margin: 0;
@@ -35,11 +35,15 @@ p {
 
 
 
+
+
 @import 'blocks/intro';
 @import 'blocks/features';
 @import 'blocks/works';
 @import 'blocks/team';
 @import 'blocks/reviews';
+@import 'blocks/download';
+@import 'blocks/footer';
 
 
 
