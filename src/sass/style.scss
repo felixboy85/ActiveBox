@@ -33,7 +33,42 @@ p {
     padding: 0 15px;
 }
 
+.burger {
+    display: none;
+    padding: 9px 2px;
+    background: none;
+    border: 0;
+    cursor: pointer;
 
+    &__item {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+
+        font-size: 0;
+        color: transparent;
+        
+        position: relative;
+        &:before, &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            
+            background-color: #ffffff;
+
+            position: absolute;
+            left: 0;
+            z-index: 1;
+        }
+        &:before { 
+            top: -8px;
+        }
+        &:after {
+            bottom: -8px;
+        }
+    }
+}
 
 
 
@@ -44,6 +79,10 @@ p {
 @import 'blocks/reviews';
 @import 'blocks/download';
 @import 'blocks/footer';
+@import 'base/media';
+
+
+
 
 
 
