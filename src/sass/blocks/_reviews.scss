@@ -1,9 +1,17 @@
 .reviews {
     overflow: hidden;
     background-color: #53354a;
+    &__slider {
+        height: 500px;
+        overflow: hidden;
+    }
+    &__slider.slick-initialized {
+        height: auto;
+    }
     &__item{
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
     }
     &__photo {
         width: 50%;
@@ -39,4 +47,42 @@
         text-transform: uppercase;
         color: #ffffff;
     }
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    
+}
+.slick-dots li {
+    margin: 0 5px;
+}
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+
+    background: #ffffff;
+    border-radius: 50%;
+
+    border: 0;
+    opacity: .5;
+    padding: 0;
+    cursor: pointer;
+
+    font-size: 0;
+    color: transparent;
+}
+.slick-dots button:focus {
+    outline: 0;
+}
+.slick-dots .slick-active button {
+    opacity: 1;
 }

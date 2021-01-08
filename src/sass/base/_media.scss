@@ -8,6 +8,22 @@
 @media (max-width: 991px) {
     .nav {
         display: none;
+        width: 100%;
+        flex-direction: column;
+
+        background-color: #31344e;
+
+        text-align: right;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+        &.show {
+            display: flex;
+        }
+        &__link {
+            padding: 9px 15px;
+        }
     }
     .burger {
         display: block;
